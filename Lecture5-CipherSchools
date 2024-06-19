@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Variables_DataType : MonoBehaviour
+{
+    // Start is called before the first frame update
+    int myInt = 7;
+    float myFloat = 7.7f;
+    bool myBool = true;
+    public string myString;
+    void Start()
+    {
+        Debug.Log("The value of myInt is: " + myInt);
+        Debug.Log("The value of myFloat is: " + myFloat);
+        Debug.Log("The value of myBool is: " + myBool);
+
+        Debug.Log("The value of myString is: " + myString);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
