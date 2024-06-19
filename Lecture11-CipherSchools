@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Lists : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public List<string> myList;
+    void Start()
+    {
+        myList.Add("Monu");
+        myList.Add("Kapil");
+        myList.Add("Vikash");
+
+
+        for(int i=0;i < myList.Count; i++)
+        {
+            Debug.Log("Names: " + myList[i]);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
