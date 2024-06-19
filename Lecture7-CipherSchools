@@ -1,0 +1,45 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ElseIf_Switch : MonoBehaviour
+{
+    public int age;
+    public int marks;
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (age < 18)
+        {
+            Debug.Log("You are teenager.");
+        }
+        else if (age >= 19 && age < 60)
+        {
+            Debug.Log("You are adult.");
+        }
+        else
+        {
+            Debug.Log("You are in old age");
+        }
+
+        switch (marks)
+        {
+            case 10:
+                Debug.Log("You got full marks.");
+                break;
+            case 5:
+                Debug.Log("You got half marks.");
+                break;
+            default:
+                Debug.Log("You don't get good marks.");
+                break;
+            
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
